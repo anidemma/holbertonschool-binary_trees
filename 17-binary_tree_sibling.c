@@ -2,7 +2,7 @@
 /**
  * binary_tree_sibling - func
  * @node: node
- * Return: uncle of element
+ * Return: sibling of element
  */
 binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 {
