@@ -33,8 +33,8 @@ int find_depth_left(const binary_tree_t *tree)
  * isPerfect - func
  * @tree: tree
  * @depth: depth
- * @level; level
- * rETURN; perfect or not
+ * @level: level
+ * Return: perfect or not
  */
 int isPerfect(const binary_tree_t *tree, int depth, int level)
 {
