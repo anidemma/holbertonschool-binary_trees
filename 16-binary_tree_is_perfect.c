@@ -9,12 +9,12 @@ int isPerfect(const binary_tree_t *tree, int depth, int level);
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
 	int check, depth, level = 0;
-	
+
 	if (tree == NULL)
 		return (0);
 	depth  = find_depth_left(tree);
 	check = isPerfect(tree, depth, level);
-	return (check); 
+	return (check);
 }
 /**
  * find_depth_left - func
@@ -41,7 +41,7 @@ int isPerfect(const binary_tree_t *tree, int depth, int level)
 	if (!tree)
 		return (0);
 	if (!tree->left && !tree->right)
-		return (depth == (level + 1));  
+		return (depth == (level + 1));
 	if (!tree->left || !tree->right)
 		return (0);
 	return (isPerfect(tree->left, depth, level + 1) &&
